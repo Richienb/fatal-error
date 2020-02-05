@@ -1,6 +1,6 @@
 {
 	"name": "fatal-error",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Throw an uncatchable error.",
 	"repository": "https://github.com/Richienb/fatal-error.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
