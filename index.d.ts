@@ -1,14 +1,13 @@
 /**
- * My awesome module.
- * @param input Lorem ipsum.
- * @param postfix Lorem ipsum.
+ * Throw an uncatchable error.
+ * @param error The error to throw.
  * @example
  * ```
- * const theModule = require("the-module");
- * theModule("unicorns");
- * //=> 'unicorns & rainbows'
+ * const fatalError = require("fatal-error");
+ *
+ * fatalError(new Error("Catch me if you can!"));
  * ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string;
+declare function fatalError(error: Error): void
 
-export = theModule;
+export = fatalError

@@ -1,8 +1,8 @@
 {
-	"name": "the-module",
+	"name": "fatal-error",
 	"version": "0.0.0",
-	"description": "My awesome module.",
-	"repository": "https://github.com/Richienb/the-module.git",
+	"description": "Throw an uncatchable error.",
+	"repository": "https://github.com/Richienb/fatal-error.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
 	"main": "index.js",
@@ -11,14 +11,22 @@
 		"index.d.ts"
 	],
 	"engines": {
-		"node": ">=10"
+		"node": ">=4"
 	},
 	"scripts": {
 		"lint": "xo",
 		"test": "yarn lint && ava"
 	},
-	"keywords": [],
-	"dependencies": {},
+	"keywords": [
+		"error",
+		"fatal",
+		"uncatchable",
+		"try",
+		"catch"
+	],
+	"dependencies": {
+		"next-tick": "^1.0.0"
+	},
 	"devDependencies": {
 		"ava": "^3.2.0",
 		"eslint-config-richienb": "^0.3.0",

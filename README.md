@@ -1,41 +1,29 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Fatal Error [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/fatal-error/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/fatal-error)
 
-My awesome module.
+Throw an uncatchable error.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/fatal-error.png)](https://npmjs.com/package/fatal-error)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install fatal-error
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const fatalError = require("fatal-error");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+fatalError(new Error("Catch me if you can!"));
 ```
 
 ## API
 
-### theModule(input, options?)
+### fatalError(error)
 
-#### input
+#### error
 
-Type: `string`
+Type: `Error`
 
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The error to throw.
